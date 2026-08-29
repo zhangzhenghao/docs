@@ -109,7 +109,7 @@ $$
 
 最近的研究表明，大型语言模型（如 ChatGPT）可以通过提示词工程有效地执行推荐[^2][^3]。Gorse 利用这种能力，通过使用 LLM 根据用户反馈和物品信息对推荐物品进行排序。
 
-在使用大语言模型重排器之前，必须在配置文件的 [`[recommend.ranker.reranker_api]`](../../zh/docs/config#recommendrankerreranker_api) 中配置 Reranker API。还必须在排序器配置中提供查询模板和文档模板。推荐 GitHub 仓库的一个示例模板如下：
+在使用大语言模型重排器之前，必须在配置文件的 [`[recommend.ranker.reranker_api]`](../config#recommendrankerreranker_api) 中配置 Reranker API。还必须在排序器配置中提供查询模板和文档模板。推荐 GitHub 仓库的一个示例模板如下：
 
 - 查询模板
 

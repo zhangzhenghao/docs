@@ -12,7 +12,7 @@ AVX512 is the latest generation of SIMD instructions released by Intel, which ca
 
 [MinIO](https://github.com/minio) had open-sourced a tool to convert Intel assembly to Go assembly [c2goasm](https://github.com/minio/c2goasm). First, the vectorized functions are implemented in C, and the assembly containing the SIMD instructions is compiled by Clang. Then, since [Go assembly](https://go.dev/doc/asm) [supports AVX512](https://github.com/golang/go/wiki/AVX512), the functions implemented by SIMD can be called through Go assembly. The c2goasm solution is very effective, however, the project has not been updated for almost 4 years, and after testing it cannot handle AVX512 instructions.
 
-To use AVX512 in Go, we have developed a toolkit for compiling C into Go assembly functions [goat](https://github.com/gorse-io/gorse/tree/master/cmd/goat) and implemented a library of vectorized functions with the help of goat [github.com/gorse-io/gorse/base/floats](https://github.com/gorse-io/gorse/tree/master/base/floats). Inheriting the idea of c2goasm, `goat` implements further enhancements.
+To use AVX512 in Go, we have developed a toolkit for compiling C into Go assembly functions [goat](https://github.com/gorse-io/gorse/tree/master/cmd/goat) and implemented a library of vectorized functions with the help of goat [github.com/gorse-io/gorse/common/floats](https://github.com/gorse-io/gorse/tree/master/common/floats). Inheriting the idea of c2goasm, `goat` implements further enhancements.
 
 1. Starting directly from the C source code to get Go assembly functions, the user does not have to compile the C source code itself.
 2. It will also generate Go function definitions based on C function definitions, so users do not need to write Go function definitions by hand.
@@ -668,4 +668,4 @@ Finally, we benchmark the performance of the non-vectorized function and the vec
 
 :::
 
-In addition, the SIMD instructions Neon for ARM can also be used in Go by the idea of this post. goat also supports ARM, and Gorse also implements vectorized computation libraries for Neon instructions (refer to [github.com/gorse-io/gorse/base/floats](https://github.com/gorse-io/gorse/tree/master/base/floats)). You are welcome to use goat to build your own vectorized functions in Go projects, more questions are welcome in [Issues](https://github.com/gorse-io/gorse/issues) or [Discord](https://discord.gg/x6gAtNNkAE).
+In addition, the SIMD instructions Neon for ARM can also be used in Go by the idea of this post. goat also supports ARM, and Gorse also implements vectorized computation libraries for Neon instructions (refer to [github.com/gorse-io/gorse/common/floats](https://github.com/gorse-io/gorse/tree/master/common/floats)). You are welcome to use goat to build your own vectorized functions in Go projects, more questions are welcome in [Issues](https://github.com/gorse-io/gorse/issues) or [Discord](https://discord.gg/x6gAtNNkAE).

@@ -4,7 +4,7 @@ icon: kubernetes
 
 # Kubernetes 部署
 
-Gorse 为 Kubernetes 部署提供了[Helm Chart](https://artifacthub.io/packages/helm/gorse-io/gorse)。该图表使用[Helm](http://kubernetes.io)包管理器在[Kubernetes](https://helm.sh)集群上启动 Gorse 部署。
+Gorse 为 Kubernetes 部署提供了[Helm Chart](https://artifacthub.io/packages/helm/gorse-io/gorse)。该图表使用[Helm](https://helm.sh)包管理器在[Kubernetes](http://kubernetes.io)集群上启动 Gorse 部署。
 
 Helm Chart 另外包含了[Bitnami MongoDB Chart](https://github.com/bitnami/charts/tree/main/bitnami/mongodb)，该Chart是为满足Gorse应用程序的数据存储需求而引入的。
 

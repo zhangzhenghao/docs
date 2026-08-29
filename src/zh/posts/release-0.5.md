@@ -53,7 +53,7 @@ tag:
 
 ### 配置文件更新
 
-参考最新的[配置文件示例](https://https://github.com/gorse-io/gorse/blob/master/config/config.toml)更新您的配置文件。主要的配置变更包括：
+参考最新的[配置文件示例](https://github.com/gorse-io/gorse/blob/master/config/config.toml)更新您的配置文件。主要的配置变更包括：
 1. 正反馈类型支持对`Value`字段设置表达式，例如`read>=3`表示查看次数大于等于3的反馈为正反馈，请按需修改。
 2. 热门推荐、相似物品推荐和相似用户推荐算法的配置项被移除，请迁移到非个性化推荐算法、物物推荐算法和用户到用户推荐算法。
 3. 其他配置项的命名和默认值可能有所变更，请仔细对比。

@@ -30,7 +30,7 @@ docker run -p 8088:8088 zhenghaoz/gorse-in-one --playground
 
 有一个示例 [docker-compose.yml](https://github.com/gorse-io/gorse/blob/master/docker-compose.yml)，其中包含一个主节点、一个服务器节点和一个工作节点，以及一个 MySQL 实例。
 
-1. 下载 [docker-compose.yml](https://github.com/zhenghaoz/gorse/blob/master/docker-compose.yml) 和配置文件 [config.toml](https://github.com/gorse-io/gorse/blob/master/config/config.toml)。
+1. 下载 [docker-compose.yml](https://github.com/gorse-io/gorse/blob/master/docker-compose.yml) 和配置文件 [config.toml](https://github.com/gorse-io/gorse/blob/master/config/config.toml)。
 
 ```bash
 # 创建一个新目录

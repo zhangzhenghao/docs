@@ -8,7 +8,7 @@ tag:
 ---
 # 2026年哪个本文嵌入模型最适合推荐系统
 
-在2025年的文章[推荐场景下文本嵌入模型性能对比](./embedding-benchmark.md)中，我们评估了本文嵌入模型在相似推荐上的表现。在文章发布之后的半年内，阿里云和谷歌相继推出了新一代的开源本文嵌入模型，分别是阿里云的[qwen3-embedding](https://github.com/QwenLM/Qwen3-Embedding)和谷歌的[embeddinggemma](https://ai.google.dev/gemma/docs/embeddinggemma)。最近[gorse-bench](https://github.com/gorse-io/gorse/tree/master/cmd/gorse-bench)工具也新增了文本嵌入模型的基准测试功能，本文将使用[gorse-bench](https://github.com/gorse-io/gorse/tree/master/cmd/gorse-bench)和playground数据集，对热门的开源本文嵌入模型进行一次全面的评测。
+阿里云和谷歌相继推出了新一代的开源文本嵌入模型，分别是阿里云的[qwen3-embedding](https://github.com/QwenLM/Qwen3-Embedding)和谷歌的[embeddinggemma](https://ai.google.dev/gemma/docs/embeddinggemma)。最近[gorse-bench](https://github.com/gorse-io/gorse/tree/master/cmd/gorse-bench)工具也新增了文本嵌入模型的基准测试功能，本文将使用[gorse-bench](https://github.com/gorse-io/gorse/tree/master/cmd/gorse-bench)和playground数据集，对热门的开源文本嵌入模型进行一次全面的评测。
 
 ## 评估方法：基于相似度的单样本推荐
 
@@ -57,7 +57,7 @@ OPENAI_AUTH_TOKEN="NVIDIA_API_KEY"
 
 ## 实验结果
 
-评测的开源模型在[推荐场景下文本嵌入模型性能对比](./embedding-benchmark.md)一文的基础上新增了阿里云的`qwen3-embedding`系列和谷歌的`embeddinggemma`系列。另外，阿里云的`text-embedding-v4`作为商业模型的代表作为参考：
+本文评测的开源模型包括阿里云的`qwen3-embedding`系列、谷歌的`embeddinggemma`系列，以及`nomic-embed-text`、`mxbai-embed-large`和`bge-m3`。另外，阿里云的`text-embedding-v4`作为商业模型的代表用于对比：
 
 ::: echarts 排序准确率对比
 
