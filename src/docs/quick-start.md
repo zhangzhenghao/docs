@@ -30,7 +30,7 @@ For Gorse-in-one, the RESTful endpoint is http://localhost:8088.
 
 There is an example [docker-compose.yml](https://github.com/gorse-io/gorse/blob/master/docker-compose.yml) consists of a master node, a server node and a worker node, and a MySQL instance.
 
-1. Download [docker-compose.yml](https://github.com/zhenghaoz/gorse/blob/master/docker-compose.yml) and the config file [config.toml](https://github.com/gorse-io/gorse/blob/master/config/config.toml).
+1. Download [docker-compose.yml](https://github.com/gorse-io/gorse/blob/master/docker-compose.yml) and the config file [config.toml](https://github.com/gorse-io/gorse/blob/master/config/config.toml).
 
 ```bash
 # Create a new directory

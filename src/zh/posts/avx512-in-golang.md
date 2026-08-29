@@ -13,7 +13,7 @@ AVX512是英特尔发布的最新最新一代SIMD指令，能够在一个指令�
 
 [MinIO](https://github.com/minio)曾经开源过一个将英特尔汇编转换为Go汇编的工具[c2goasm](https://github.com/minio/c2goasm)。首先，将需要向量化的函数用C语言实现，通过Clang编译出包含SIMD指令的汇编。然后，由于[Go汇编](https://go.dev/doc/asm)是[支持AVX512](https://github.com/golang/go/wiki/AVX512)的，将Intel汇编指令转换成Go汇编，即可通过汇编调用SIMD实现的函数。c2goasm的方案十分有效，然而项目已经将近4年没有更新，经过测试也无法处理AVX512指令。
 
-为能够在Go语言中使用AVX512，我们开发了一个将C语言编译为Go汇编函数的工具包[goat](https://github.com/gorse-io/gorse/tree/master/cmd/goat)，借助goat实现了一个向量化函数库[github.com/gorse-io/gorse/base/floats](https://github.com/gorse-io/gorse/tree/master/base/floats)。在继承c2goasm技术路线的基础上，goat实现了功能上进一步的增强：
+为能够在Go语言中使用AVX512，我们开发了一个将C语言编译为Go汇编函数的工具包[goat](https://github.com/gorse-io/gorse/tree/master/cmd/goat)，借助goat实现了一个向量化函数库[github.com/gorse-io/gorse/common/floats](https://github.com/gorse-io/gorse/tree/master/common/floats)。在继承c2goasm技术路线的基础上，goat实现了功能上进一步的增强：
 
 1. 从C语言源代码直接开始转换得到Go汇编函数，用户不必自行编译C语言源代码；
 2. 同时会根据C语言函数定义生成Go函数定义，用户不需要手写Go函数定义。
@@ -669,4 +669,4 @@ Go汇编需要保存到后缀为`.s`的文件中，Go函数定义和包装函数
 
 :::
 
-另外，ARM平台的SIMD方案Neon同样可以通过本文的方案在Go语言中使用，goat同样支持ARM平台，Gorse同样实现了Neon指令的向量化计算库（参考[github.com/gorse-io/gorse/base/floats](https://github.com/gorse-io/gorse/tree/master/base/floats)）。欢迎大家使用goat在Go项目中构建自己的向量化函数，更多问题欢迎在[Issues](https://github.com/gorse-io/gorse/issues)或者[QQ群](https://qm.qq.com/cgi-bin/qm/qr?k=lOERnxfAM2U2rj4C9Htv9T68SLIXg6uk&jump_from=webapi)中交流。
+另外，ARM平台的SIMD方案Neon同样可以通过本文的方案在Go语言中使用，goat同样支持ARM平台，Gorse同样实现了Neon指令的向量化计算库（参考[github.com/gorse-io/gorse/common/floats](https://github.com/gorse-io/gorse/tree/master/common/floats)）。欢迎大家使用goat在Go项目中构建自己的向量化函数，更多问题欢迎在[Issues](https://github.com/gorse-io/gorse/issues)或者[QQ群](https://qm.qq.com/cgi-bin/qm/qr?k=lOERnxfAM2U2rj4C9Htv9T68SLIXg6uk&jump_from=webapi)中交流。

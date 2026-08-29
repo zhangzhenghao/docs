@@ -4,7 +4,7 @@ icon: faq
 
 # 常见问题
 
-这些常见问题是从工单、电子邮件和聊天中收集的。欢迎通过[工单](https://github.com/zhenghaoz/gorse/issues)、[电子邮件](mailto:support@gorse.io)、 [Discord](https://discord.com/channels/830635934210588743/) （英文）或[QQ](https://qm.qq.com/cgi-bin/qm/qr?k=lOERnxfAM2U2rj4C9Htv9T68SLIXg6uk&jump_from=webapi) （中文）提出更多问题。
+这些常见问题是从工单、电子邮件和聊天中收集的。欢迎通过[工单](https://github.com/gorse-io/gorse/issues)、[电子邮件](mailto:support@gorse.io)、 [Discord](https://discord.com/channels/830635934210588743/) （英文）或[QQ](https://qm.qq.com/cgi-bin/qm/qr?k=lOERnxfAM2U2rj4C9Htv9T68SLIXg6uk&jump_from=webapi) （中文）提出更多问题。
 
 ### 1. 如何解决冷启动问题？
 

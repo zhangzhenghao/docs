@@ -7,7 +7,7 @@ tag:
 ---
 # Benchmark Text Embedding Models for RecSys in 2026
 
-In the 2025 post [Text Embedding Benchmark for Recommender Systems](./embedding-benchmark.md), we benchmarked the performance of text embedding models in similarity-based recommendations. Within six months of that post's publication, Alibaba Cloud and Google launched a new generation of open-source text embedding models: [qwen3-embedding](https://github.com/QwenLM/Qwen3-Embedding) by Alibaba Cloud and [embeddinggemma](https://ai.google.dev/gemma/docs/embeddinggemma) by Google. Recently, the [gorse-bench](https://github.com/gorse-io/gorse/tree/master/cmd/gorse-bench) also added a benchmarking feature for text embedding models. This post will use [gorse-bench](https://github.com/gorse-io/gorse/tree/master/cmd/gorse-bench) and the playground dataset to conduct a comprehensive benchmark of popular open-source text embedding models.
+In 2025, we benchmarked the performance of text embedding models in similarity-based recommendations. Within six months of that benchmark's publication, Alibaba Cloud and Google launched a new generation of open-source text embedding models: [qwen3-embedding](https://github.com/QwenLM/Qwen3-Embedding) by Alibaba Cloud and [embeddinggemma](https://ai.google.dev/gemma/docs/embeddinggemma) by Google. Recently, the [gorse-bench](https://github.com/gorse-io/gorse/tree/master/cmd/gorse-bench) tool also added benchmark features for text embedding models. In this post, we use [gorse-bench](https://github.com/gorse-io/gorse/tree/master/cmd/gorse-bench) and the playground dataset to conduct a comprehensive evaluation of popular open-source text embedding models.
 
 ## Evaluation: 1-shot Similarity-based Recommendation
 
@@ -56,7 +56,7 @@ Compile [gorse-bench](https://github.com/gorse-io/gorse/tree/master/cmd/gorse-be
 
 ## Results
 
-The evaluated open-source models include `qwen3-embedding` from Alibaba Cloud and the `embeddinggemma` from Google, building upon the models in [Comparing Text Embedding Model Performance in Recommendation Scenarios](./embedding-benchmark.md). Additionally, Alibaba Cloud's `text-embedding-v4` is included as a reference for commercial models:
+The evaluated open-source models include `qwen3-embedding` from Alibaba Cloud and `embeddinggemma` from Google, building upon the models from the 2025 benchmark. Additionally, Alibaba Cloud's `text-embedding-v4` is included as a reference for commercial models:
 
 ::: echarts Ranking Performance Comparison
 

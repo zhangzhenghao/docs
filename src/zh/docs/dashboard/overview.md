@@ -3,15 +3,15 @@ icon: home
 ---
 # 界面总览
 
-主节点提供 Gorse 仪表盘，可通过主节点的 HTTP 端口（默认值为 `8088`）访问。HTTP 主机和 HTTP 端口在配置文件的 [`[master]`](./config#master) 部分中指定。
+主节点提供 Gorse 仪表盘，可通过主节点的 HTTP 端口（默认值为 `8088`）访问。HTTP 主机和 HTTP 端口在配置文件的 [`[master]`](../config#master) 部分中指定。
 
 ## 授权
 
 默认配置允许未经授权访问控制台。
 
-- **用户名和密码：** 仪表盘的用户名和密码可以在配置文件的 [`[master]`](./config#master) 部分中设置。如果设置了用户名和密码，访问仪表盘时将显示登录页面。
+- **用户名和密码：** 仪表盘的用户名和密码可以在配置文件的 [`[master]`](../config#master) 部分中设置。如果设置了用户名和密码，访问仪表盘时将显示登录页面。
 
-- **OpenID Connect：** 启用并配置配置文件的 [`[oidc]`](./config#oidc) 部分。如果启用了 OpenID Connect，访问仪表盘时，您将被重定向到身份提供商进行身份验证。
+- **OpenID Connect：** 启用并配置配置文件的 [`[oidc]`](../config#oidc) 部分。如果启用了 OpenID Connect，访问仪表盘时，您将被重定向到身份提供商进行身份验证。
 
 ## 指南
 
