@@ -229,6 +229,6 @@ export default hopeTheme({
       switchLocale: "modal",
     },
 
-    backToTop: false
+    backToTop: false,
   },
 });
