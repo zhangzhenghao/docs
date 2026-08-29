@@ -228,5 +228,7 @@ export default hopeTheme({
     redirect: {
       switchLocale: "modal",
     },
+
+    backToTop: false,
   },
 });
